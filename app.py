@@ -14,10 +14,12 @@ header {visibility: hidden;}
 """, unsafe_allow_html=True)
 
 # ------------------ LOGIN ------------------
-password = st.sidebar.text_input("Enter Password", type="password")
+st.title("🔐 SmartPolish Login")
+
+password = st.text_input("Enter Password", type="password")
 
 if password != "kamra123":
-    st.warning("Enter valid password")
+    st.warning("Please enter correct password to continue")
     st.stop()
 
 # ------------------ TITLE ------------------
